@@ -37,7 +37,7 @@ Then configure the Classic Webcam plugin:
 3. Add the Snapshot URL: http://127.0.0.1:8080/single
 4. Save
 
-Finally, make sure the Webcam & Timlapse settings are correct:
+Finally, make sure the Webcam & Timelapse settings are correct:
 1. Go to Settings->Webcam & Timelapse
 2. Enable Webcam support
 3. Enable Timelapse support
