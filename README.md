@@ -21,3 +21,25 @@ To run at startup:
 3. reload systemd: sudo systemctl daemon-reload
 4. enable the service: sudo systemctl enable webcamd.service
 5. start the service: sudo systemctl start webcamd.service.
+
+
+Once this is setup, you can integrate your camera into octopi via the following.
+
+The first step is to make sure the Classic Webcam plugin is installed. This is usually bundled with octopi, but to confirm:
+
+Log into your octopi website and go to Settings->Plugin Manager
+1. Search for "Classic Webcam"
+2. Make sure it is installed.
+
+Then configure the Classic Webcam plugin:
+1. Go to Settings->Classic Webcam
+2. Add the Stream URL: http://YOUR_IP_ADDRESS:8080/stream.mjpg
+3. Add the Snapshot URL: http://127.0.0.1:8080/single
+4. Save
+
+Finally, make sure the Webcam & Timlapse settings are correct:
+1. Go to Settings->Webcam & Timelapse
+2. Enable Webcam support
+3. Enable Timelapse support
+4. Choose "Classic Webcam" for your snapshot webcam
+5. Choose "Classic Webcam" for your fallback webcam.
